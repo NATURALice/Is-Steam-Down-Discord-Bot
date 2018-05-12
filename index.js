@@ -17,7 +17,9 @@ client.on("ready", async () => {
 client.on('message', message => {
 
 	// Checks for "is steam down" intent, and responds
-	if (message.content === 'is steam down?') {
+	let msg = message.content.toLowerCase();
+	const intent = "is steam down?";
+	if (msg === intent) {
 		console.log("Received intent: 'is steam down'");
 		const user = message.author;
 		message.channel.send("Hey there " + user + ", one moment, checking...");
