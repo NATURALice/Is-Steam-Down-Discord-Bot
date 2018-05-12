@@ -1,8 +1,8 @@
 const botconfig = require("./botconfig.json"); // JSON file contains the clientID and SteamGaugeAPI endpoint
 const Discord = require("discord.js"); 
-const client = new Discord.Client({disableEveryone: true}); 
 const request = require('request'); 
 const options = {json: true}; 
+const client = new Discord.Client({disableEveryone: true}); 
 const steamGuageAPI = botconfig.steamGaugeEndpoint;
 
 // Logs the bot in using the token from botconfig.json
