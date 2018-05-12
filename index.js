@@ -1,10 +1,9 @@
-// Set up constants for project
-const botconfig = require("./botconfig.json"); // File contains the clientID for my bot
-const Discord = require("discord.js"); // Require the discord.js library for node (contains all methods/objects/functions etc)
-const client = new Discord.Client({disableEveryone: true}); // Creates discord object from discord.js
-const request = require('request'); // Require request package for API call using requests
-const options = {json: true}; // Auto parse API call to json
-const steamGuageAPI = botconfig.steamGaugeEndpoint; // Endpoint for api call
+const botconfig = require("./botconfig.json"); // JSON file contains the clientID and SteamGaugeAPI endpoint
+const Discord = require("discord.js"); 
+const client = new Discord.Client({disableEveryone: true}); 
+const request = require('request'); 
+const options = {json: true}; 
+const steamGuageAPI = botconfig.steamGaugeEndpoint;
 
 // Logs the bot in using the token from botconfig.json
 client.login(botconfig.token); 
