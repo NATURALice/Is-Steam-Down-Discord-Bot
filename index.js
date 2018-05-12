@@ -1,7 +1,6 @@
 // Set up constants for project
 const botconfig = require("./botconfig.json"); // File contains the clientID for my bot
 const Discord = require("discord.js"); // Require the discord.js library for node (contains all methods/objects/functions etc)
-const apiCalls = require("./apiCalls.js"); // Functions for doing work
 const client = new Discord.Client({disableEveryone: true}); // Creates discord object from discord.js
 const request = require('request'); // Require request package for API call using requests
 const options = {json: true}; // Auto parse API call to json
